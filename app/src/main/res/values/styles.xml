@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000</item>
+        <item name="colorPrimaryDark">@color/PERSIAN_PINK</item>
+        <item name="colorAccent">@color/PERSIAN_PINK</item>
+    </style>
+
+
+</resources>

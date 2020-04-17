@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/browser"
+    android:layout_height="match_parent"
+    tools:context=".activities.statu_browser">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="#FFF"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:elevation="6dp"
+        android:textSize="25dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_browser"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="match_parent" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3563980099774915/9500202801">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
